@@ -198,47 +198,96 @@ const MonthlyReport = () => {
               {/* Status */}
               <div className="my-3">
                 <SectionHeader small className="mt-5">
-                  6. Status
+                  6. Status &amp; Completion Metrics
                 </SectionHeader>
-                <p>Track task progress with predefined statuses:</p>
+
+                <p>
+                  Track task progress using clear statuses and matching
+                  completion percentages. This helps every department &mdash;
+                  Legal, Projects, IT, Architecture, Sales, and Operations
+                  &mdash; stay aligned and understand progress easily.
+                </p>
+
                 <ul>
                   <li>
-                    <strong>Not Started:</strong> No work initiated. Task is in
-                    the queue, awaiting action.
+                    <strong>Not Started (0%):</strong> No work has started yet.
+                    The task is scheduled and waiting for action.
                   </li>
+
                   <li>
-                    <strong>In Progress:</strong> Work on the task has begun.
-                    Ensure regular updates to completion percentage and blockers
-                    if necessary.
+                    <strong>In Progress (1% &ndash; 50%):</strong> Work has
+                    started. Update the percentage regularly to reflect actual
+                    progress. Raise risks, delays, or dependencies early.
                   </li>
+
                   <li>
-                    <strong>On Hold:</strong> Task is paused due to internal or
-                    external dependencies. For example, &quot;Waiting for client
-                    feedback&quot;.
+                    <strong>On Hold:</strong> The task is temporarily paused due
+                    to an internal or external dependency. Example:
+                    &quot;Waiting for client feedback&quot;, &quot;Pending site
+                    access&quot;, or &quot;Awaiting legal documents&quot;.
                   </li>
+
                   <li>
-                    <strong>Waiting for Review:</strong> Task is completed and
-                    awaiting approval or feedback. Example: &quot;Drafted
-                    proposal sent to manager for review&quot;.
+                    <strong>Blocked:</strong> Work cannot continue because of an
+                    unresolved issue. Example: &quot;System error&quot;,
+                    &quot;Approval pending&quot;, or &quot;Regulatory
+                    delay&quot;.
                   </li>
+
                   <li>
-                    <strong>Blocked:</strong> Task progress is halted due to
-                    unresolved issues. For instance, &quot;Waiting for legal
-                    clearance&quot; or &quot;System down&quot;.
+                    <strong>Waiting for Review (51% &ndash; 69%):</strong> The
+                    main work is completed and submitted for review, validation,
+                    or feedback. This may apply to design drafts, contracts,
+                    system updates, site reports, or financial reviews.
                   </li>
+
                   <li>
-                    <strong>Completed:</strong> Task has been fully completed
-                    and no further action is required.
+                    <strong>Completed (70% &ndash; 79%):</strong> The task work
+                    is finished and confirmed internally. It may still require
+                    formal handoff, validation, testing, or leadership approval.
                   </li>
+
                   <li>
-                    <strong>Approved:</strong> Completed task has been reviewed
-                    and officially accepted.
+                    <strong>Sent to Next Person (80% &ndash; 89%):</strong> The
+                    task has been handed over to the next responsible person or
+                    department for further validation, approval, or
+                    implementation. At this stage, additional verification may
+                    be required before final approval &mdash; such as proper
+                    testing, stakeholder feedback, quality checks, compliance
+                    confirmation, or live usage validation.
+                  </li>
+
+                  <li>
+                    <strong>Approved (90% &ndash; 95%):</strong> The task has
+                    been reviewed and officially accepted by the responsible
+                    authority. No major rework is expected.
+                  </li>
+
+                  <li>
+                    <strong>
+                      Concluded / Filed / Archived (96% &ndash; 99%):
+                    </strong>{' '}
+                    The task is formally wrapped up and properly documented. It
+                    remains stored in the system for record, audit, or
+                    compliance purposes.
+                  </li>
+
+                  <li>
+                    <strong>Fully Closed / Fully Resolved (100%):</strong> The
+                    task is completely finalized. All actions are complete,
+                    documentation is in order, dependencies are cleared, and no
+                    further follow-up is required.
                   </li>
                 </ul>
+
                 <AlertAttention type="info">
-                  Use comments or notes to provide clarity on why a task is{' '}
-                  <strong>On Hold</strong> or <strong>Blocked</strong>. This
-                  ensures transparency and helps resolve issues faster.
+                  Always update the completion percentage together with the task
+                  status.
+                  <br />
+                  <br />
+                  Add clear comments when a task is <strong>On Hold</strong> or
+                  <strong> Blocked</strong> so other teams understand the reason
+                  and can help resolve it quickly.
                 </AlertAttention>
               </div>
 
